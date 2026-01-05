@@ -35,7 +35,7 @@
             cargo-fuzz
           ];
 
-          RUST_BACKTRACE = "full";
+          RUST_BACKTRACE = "errors_backtrace";
         };
       }
     );
