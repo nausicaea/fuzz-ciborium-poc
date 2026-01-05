@@ -26,11 +26,6 @@
           ];
 
           buildInputs = with pkgs; [
-            # openssl
-            # pkg-config
-            # git
-            # trufflehog
-            # pre-commit
             rust-analyzer
             cargo-fuzz
           ];
