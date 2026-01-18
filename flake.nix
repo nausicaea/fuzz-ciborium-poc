@@ -23,6 +23,8 @@
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
             rustEnv
+            llvmPackages.compiler-rt-libc
+            clang
           ];
 
           buildInputs = with pkgs; [
@@ -30,6 +32,7 @@
             cargo-fuzz
           ];
 
+          LIBCLANG_PATH = "${pkgs.llvmPackages.libclang.lib}/lib";
           RUST_BACKTRACE = "errors_backtrace";
         };
       }

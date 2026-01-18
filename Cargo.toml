@@ -13,7 +13,8 @@ cargo-fuzz = true
 [dependencies]
 #libfuzzer-sys = "0.4"
 # libfuzzer-sys = { version = "0.15.3", package = "libafl_libfuzzer" }
-libfuzzer-sys = { git = "https://github.com/AFLplusplus/LibAFL.git", package = "libafl_libfuzzer" }
+#libfuzzer-sys = { git = "https://github.com/AFLplusplus/LibAFL.git", package = "libafl_libfuzzer" }
+libfuzzer-sys = { git = "https://github.com/atharva-potdar/LibAFL", branch = "fix-libfuzzer-macos", package = "libafl_libfuzzer" }
 ciborium = "^0.2.0"
 serde = { version = "^1.0.0", features = ["derive"] }
 
