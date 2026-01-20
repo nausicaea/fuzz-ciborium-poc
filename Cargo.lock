@@ -132,7 +132,7 @@ dependencies = [
 [[package]]
 name = "libafl_libfuzzer"
 version = "0.16.0"
-source = "git+https://github.com/atharva-potdar/LibAFL?branch=fix-libfuzzer-macos#40ed534b730dd3e90c447b4cb14247a20f267055"
+source = "git+https://github.com/atharva-potdar/LibAFL?branch=fix-libfuzzer-macos#d22e04f7fc7f011b88db8b71ccf0449c1b597f43"
 dependencies = [
  "cc",
  "libfuzzer-sys",
